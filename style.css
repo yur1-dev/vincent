@@ -1,0 +1,115 @@
+/* Global Reset & Smooth Scroll */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Base Body */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #1b262c, #0b132b);
+  color: #cfd8dc;
+  text-align: center;
+  padding: 2rem;
+}
+header h1 {
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #cfd8dc;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #0f4c75;
+}
+
+/* Full-screen Sections */
+section {
+  height: 100vh;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#about {
+  background-color: #1b262c;
+  color: #cfd8dc;
+}
+#portfolio {
+  background-color: #0f4c75;
+  color: #cfd8dc;
+}
+#hobbies {
+  background-color: #53354a;
+  color: #cfd8dc;
+}
+#contact {
+  background-color: #0b132b;
+  color: #cfd8dc;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #cfd8dc;
+  margin-bottom: 1rem;
+}
+
+/* Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  width: 100%;
+}
+.card {
+  background: #e0e0e0cc;
+  color: #1b262c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Lists */
+ul {
+  list-style: square;
+  font-size: 1.2rem;
+}
+
+/* Email Link */
+.email-link {
+  color: #0f4c75;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(to right, #1b262c, #0b132b);
+  color: #cfd8dc;
+  text-align: center;
+  padding: 1rem;
+}
